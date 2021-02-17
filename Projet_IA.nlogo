@@ -2,7 +2,7 @@
   chemical
   wall
 ]
-globals [liste]
+globals [liste down?]
 to setup
   clear-all
   create-turtles nb-turtle [setxy random-xcor random-ycor]
@@ -10,12 +10,33 @@ to setup
   reset-ticks
 end
 
+to place-turtles
+  clear-turtles
+  let is_wall true
+  create-turtles nb-turtle [
+    setxy random-xcor random-ycor ask patch-here [
+      set is_wall wall
+    ] while [is_wall] [
+      setxy random-xcor random-ycor ask patch-here [
+        set is_wall wall
+      ]
+    ]
+  ]
+  reset-ticks
+end
 to setup-patches
-  ask patches [ set chemical 0]
-  ask patches [ ifelse random 6 = 0 and count turtles-here = 0  [set wall true set pcolor blue set chemical 2][set wall false]]
+  ask patches [ set chemical 0 set wall false]
+  ;;ask patches [ ifelse random 6 = 0 and count turtles-here = 0  [set wall true set pcolor blue set chemical 2][set wall false]]
 end
 
-
+to clear-chemicals
+  ask patches [
+    if not wall
+    [set chemical 0
+      set pcolor black
+    ]
+  ]
+end
 
 to go
   tick
@@ -54,15 +75,37 @@ to go-patches
     ]
   ]
 end
+
+
+to draw
+  ifelse mouse-down? [
+    if down? = 0 [
+      set down? 1
+      ask patch mouse-xcor mouse-ycor [
+      ifelse wall[
+        set wall false
+        set chemical 0
+        set pcolor black
+        ]
+        [
+        set wall true
+        set chemical 2
+        set pcolor blue
+        ]
+      ]
+    ]
+  ]
+  [ set down? 0 ]
+end
 @#$#@#$#@
 GRAPHICS-WINDOW
 210
 10
-647
-448
+518
+319
 -1
 -1
-13.0
+15.0
 1
 10
 1
@@ -72,10 +115,10 @@ GRAPHICS-WINDOW
 1
 1
 1
--16
-16
--16
-16
+0
+19
+0
+19
 1
 1
 1
@@ -157,7 +200,7 @@ nb-turtle
 nb-turtle
 1
 10
-10.0
+4.0
 1
 1
 NIL
@@ -177,6 +220,74 @@ go-ahead
 1
 NIL
 HORIZONTAL
+
+BUTTON
+97
+288
+160
+321
+NIL
+draw
+T
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+79
+11
+190
+44
+NIL
+setup-patches
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+80
+52
+154
+85
+NIL
+clear-all
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+79
+93
+180
+126
+NIL
+place-turtles
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
 
 @#$#@#$#@
 ## WHAT IS IT?
