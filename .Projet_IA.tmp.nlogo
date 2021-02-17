@@ -1,5 +1,6 @@
  patches-own [
   chemical
+  wall
 ]
 globals [liste]
 to setup
@@ -11,6 +12,7 @@ end
 
 to setup-patches
   ask patches [ set chemical 0]
+  ask patches [ ifelse random 6 = 0 and    [set wall true][set wall false]]
 end
 
 
@@ -27,11 +29,11 @@ to go-turtle
     set liste [ ]
     ask patch-here [
       let m min [chemical] of neighbors4
-      ask neighbors4 [ if m = chemical [set liste fput self liste]
+      ask neighbors4 [ if m = chemical and not wall [set liste fput self liste]
       ]
     ]
   let nextCell patch-ahead 1
-    ifelse member? nextCell liste and random 1 < p[
+    ifelse member? nextCell liste and random 1 < go-ahead[
       move-to nextCell
     ]
     [
@@ -45,9 +47,14 @@ end
 
 to go-patches
   ask patches [
-    set chemical (chemical * (1 - p ))
-    let greenP floor (chemical * 255)
-    set pcolor (list 0 greenP 0)
+    ifelse not wall[
+      set chemical (chemical * (1 - p ))
+      let greenP floor (chemical * 255)
+      set pcolor (list 0 greenP 0)
+    ]
+    [set pcolor blue
+    set chemical 255
+    ]
   ]
 end
 @#$#@#$#@
@@ -77,21 +84,6 @@ GRAPHICS-WINDOW
 1
 ticks
 30.0
-
-SLIDER
-0
-0
-0
-0
-NIL
-NIL
-0
-100
-50.0
-1
-1
-NIL
-HORIZONTAL
 
 BUTTON
 6
@@ -136,7 +128,7 @@ p
 p
 0
 0.2
-0.001
+0.005
 0.001
 1
 NIL
@@ -170,6 +162,21 @@ nb-turtle
 10
 10.0
 1
+1
+NIL
+HORIZONTAL
+
+SLIDER
+7
+209
+179
+242
+go-ahead
+go-ahead
+0
+1
+0.5
+0.01
 1
 NIL
 HORIZONTAL

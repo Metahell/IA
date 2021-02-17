@@ -1,5 +1,6 @@
  patches-own [
   chemical
+  wall
 ]
 globals [liste]
 to setup
@@ -11,6 +12,7 @@ end
 
 to setup-patches
   ask patches [ set chemical 0]
+  ask patches [ ifelse random 6 = 0 and count turtles-here = 0  [set wall true][set wall false]]
 end
 
 
@@ -27,7 +29,7 @@ to go-turtle
     set liste [ ]
     ask patch-here [
       let m min [chemical] of neighbors4
-      ask neighbors4 [ if m = chemical [set liste fput self liste]
+      ask neighbors4 [ if m = chemical and not wall [set liste fput self liste]
       ]
     ]
   let nextCell patch-ahead 1
@@ -45,9 +47,14 @@ end
 
 to go-patches
   ask patches [
-    set chemical (chemical * (1 - p ))
-    let greenP floor (chemical * 255)
-    set pcolor (list 0 greenP 0)
+    ifelse not wall[
+      set chemical (chemical * (1 - p ))
+      let greenP floor (chemical * 255)
+      set pcolor (list 0 greenP 0)
+    ]
+    [set pcolor blue
+    set chemical 255
+    ]
   ]
 end
 @#$#@#$#@
