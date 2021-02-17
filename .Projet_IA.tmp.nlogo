@@ -1,10 +1,10 @@
-patches-own [
+ patches-own [
   chemical
 ]
 globals [liste]
 to setup
   clear-all
-  create-turtles 10 [setxy random-xcor random-ycor]
+  create-turtles nb-turtle [setxy random-xcor random-ycor]
   setup-patches
   reset-ticks
 end
@@ -22,8 +22,9 @@ to go
 end
 
 to go-turtle
-  set liste [ ]
+
   ask turtles [
+    set liste [ ]
     ask patch-here [
       let m min [chemical] of neighbors4
       ask neighbors4 [ if m = chemical [set liste fput self liste]
@@ -77,11 +78,26 @@ GRAPHICS-WINDOW
 ticks
 30.0
 
-BUTTON
-133
+SLIDER
+0
+0
+0
+0
+NIL
+NIL
+0
 100
-196
-133
+50.0
+1
+1
+NIL
+HORIZONTAL
+
+BUTTON
+6
+11
+69
+44
 NIL
 setup
 NIL
@@ -95,10 +111,10 @@ NIL
 1
 
 BUTTON
-61
-169
-124
-202
+6
+51
+69
+84
 NIL
 go
 T
@@ -112,25 +128,25 @@ NIL
 1
 
 SLIDER
-18
-243
-190
-276
+7
+137
+179
+170
 p
 p
 0
 0.2
-0.0
+0.001
 0.001
 1
 NIL
 HORIZONTAL
 
 BUTTON
-109
-339
-172
-372
+8
+91
+71
+124
 step
 go
 NIL
@@ -142,6 +158,21 @@ NIL
 NIL
 NIL
 1
+
+SLIDER
+7
+173
+179
+206
+nb-turtle
+nb-turtle
+1
+10
+10.0
+1
+1
+NIL
+HORIZONTAL
 
 @#$#@#$#@
 ## WHAT IS IT?
