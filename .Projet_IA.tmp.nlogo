@@ -12,7 +12,7 @@ end
 
 to setup-patches
   ask patches [ set chemical 0]
-  ask patches [ ifelse random 6 = 0 and    [set wall true][set wall false]]
+  ask patches [ ifelse random 6 = 0 and count turtles-here = 0  [set wall true set pcolor blue ][set wall false]]
 end
 
 
@@ -47,13 +47,10 @@ end
 
 to go-patches
   ask patches [
-    ifelse not wall[
+    if not wall[
       set chemical (chemical * (1 - p ))
       let greenP floor (chemical * 255)
       set pcolor (list 0 greenP 0)
-    ]
-    [set pcolor blue
-    set chemical 255
     ]
   ]
 end
