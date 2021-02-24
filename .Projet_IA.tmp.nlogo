@@ -26,7 +26,7 @@ to place-turtles
 end
 to setup-patches
   ask patches [ set chemical 0 set wall false]
-    reset-ticks
+
   ;;ask patches [ ifelse random 6 = 0 and count turtles-here = 0  [set wall true set pcolor blue set chemical 2][set wall false]]
 end
 
