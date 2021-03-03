@@ -1,8 +1,9 @@
  patches-own [
   chemical
   wall
+  ini
 ]
-globals [liste down?]
+globals [liste down? igi iwi]
 to setup
   clear-all
   create-turtles nb-turtle [setxy random-xcor random-ycor]
@@ -25,7 +26,7 @@ to place-turtles
   reset-ticks
 end
 to setup-patches
-  ask patches [ set chemical 0 set wall false]
+  ask patches [ set chemical 0 set wall false set ini 0]
     reset-ticks
   ;;ask patches [ ifelse random 6 = 0 and count turtles-here = 0  [set wall true set pcolor blue set chemical 2][set wall false]]
 end
@@ -43,6 +44,8 @@ to go
   tick
   go-turtle
   go-patches
+  set igi ((sum [ini] of patches with [wall = false]) / count patches with [wall = false])
+  set iwi (max [ini] of patches with [wall = false])
 end
 
 to go-turtle
@@ -65,6 +68,7 @@ to go-turtle
     ]
     ask patch-here [
       set chemical 1
+      set ini 0
     ]
   ]
 end
@@ -75,6 +79,7 @@ to go-patches
       set chemical (chemical * (1 - p ))
       let greenP floor (chemical * 255)
       set pcolor (list 0 greenP 0)
+      set ini (ini + 1)
     ]
   ]
 end
@@ -115,7 +120,7 @@ GRAPHICS-WINDOW
 210
 10
 518
-394
+319
 -1
 -1
 15.0
@@ -131,7 +136,7 @@ GRAPHICS-WINDOW
 0
 19
 0
-24
+19
 1
 1
 1
@@ -141,9 +146,9 @@ ticks
 BUTTON
 6
 11
-69
+85
 44
-NIL
+Setup all
 setup
 NIL
 1
@@ -157,9 +162,9 @@ NIL
 
 BUTTON
 6
-51
+49
 69
-84
+82
 NIL
 go
 T
@@ -188,10 +193,10 @@ NIL
 HORIZONTAL
 
 BUTTON
-8
-91
-71
-124
+6
+89
+69
+122
 step
 go
 NIL
@@ -211,7 +216,7 @@ SLIDER
 206
 nb-turtle
 nb-turtle
-1
+0
 10
 4.0
 1
@@ -237,9 +242,9 @@ HORIZONTAL
 BUTTON
 9
 293
-72
+99
 326
-NIL
+Draw walls
 draw
 T
 1
@@ -252,11 +257,11 @@ NIL
 1
 
 BUTTON
-79
+93
 11
-190
+204
 44
-NIL
+Setup patches
 setup-patches
 NIL
 1
@@ -269,11 +274,11 @@ NIL
 1
 
 BUTTON
-80
-52
-154
-85
-NIL
+92
+50
+171
+83
+Reset all
 clear-all
 NIL
 1
@@ -286,11 +291,11 @@ NIL
 1
 
 BUTTON
-79
-93
-180
-126
-NIL
+81
+89
+198
+122
+Place turtles randomly
 place-turtles
 NIL
 1
@@ -305,9 +310,9 @@ NIL
 BUTTON
 6
 251
-120
+140
 284
-NIL
+Reset all chemicals
 clear-chemicals
 NIL
 1
@@ -322,9 +327,9 @@ NIL
 BUTTON
 10
 333
-105
+146
 366
-NIL
+Place turtle on click
 place-turtle
 T
 1
@@ -339,9 +344,9 @@ NIL
 BUTTON
 11
 372
-109
+142
 405
-NIL
+Remove all turtles
 clear-turtles
 NIL
 1
@@ -352,6 +357,25 @@ NIL
 NIL
 NIL
 1
+
+PLOT
+543
+136
+1165
+388
+Idleness
+Ticks
+Idleness
+0.0
+10.0
+0.0
+10.0
+true
+true
+"" ""
+PENS
+"Instantaneous   Graph   Idleness" 1.0 0 -16777216 true "" "plot igi"
+"Instantaneous   Worst   Idleness " 1.0 0 -2674135 true "" "plot iwi"
 
 @#$#@#$#@
 ## WHAT IS IT?
