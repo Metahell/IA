@@ -396,7 +396,7 @@ Il peut aussi tracer directement les murs du modèle en utilisant la fonctionnal
 
 ## THINGS TO TRY
 
-Essayer différents paramètres et configurations peut permettre de constater les différences d'efficacité des patrouilles des agents.
+Essayer différents paramètres et configurations peut permettre de constater les différences d'efficacité des patrouilles des a
 ## EXTENDING THE MODEL
 
 (suggested things to add or change in the Code tab to make the model more complicated, detailed, accurate, etc.)
