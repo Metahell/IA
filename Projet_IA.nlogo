@@ -722,6 +722,47 @@ NetLogo 6.2.0
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
+<experiments>
+  <experiment name="experiment p [0.005 0.005 1]" repetitions="1" runMetricsEveryStep="true">
+    <setup>setup</setup>
+    <go>go</go>
+    <timeLimit steps="100"/>
+    <metric>igi</metric>
+    <enumeratedValueSet variable="nb-turtle">
+      <value value="4"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="go-ahead">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <steppedValueSet variable="p" first="0.005" step="0.005" last="1"/>
+  </experiment>
+  <experiment name="experiment turtles [1 1 10]" repetitions="1" runMetricsEveryStep="true">
+    <setup>setup</setup>
+    <go>go</go>
+    <timeLimit steps="100"/>
+    <metric>igi</metric>
+    <steppedValueSet variable="nb-turtle" first="1" step="1" last="10"/>
+    <enumeratedValueSet variable="go-ahead">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="p">
+      <value value="0.005"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="experiment go-ahead [0 .1 1]" repetitions="1" runMetricsEveryStep="true">
+    <setup>setup</setup>
+    <go>go</go>
+    <timeLimit steps="100"/>
+    <metric>igi</metric>
+    <enumeratedValueSet variable="nb-turtle">
+      <value value="4"/>
+    </enumeratedValueSet>
+    <steppedValueSet variable="go-ahead" first="0" step="0.1" last="1"/>
+    <enumeratedValueSet variable="p">
+      <value value="0.005"/>
+    </enumeratedValueSet>
+  </experiment>
+</experiments>
 @#$#@#$#@
 @#$#@#$#@
 default
