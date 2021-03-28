@@ -58,7 +58,7 @@ to go-turtle
       ]
     ]
   let nextCell patch-ahead 1
-    ifelse member? nextCell liste and random 1 < go-ahead[
+    ifelse member? nextCell liste and random-float 1 < go-ahead[
       move-to nextCell
     ]
     [
@@ -728,6 +728,7 @@ NetLogo 6.2.0
     <go>go</go>
     <timeLimit steps="100"/>
     <metric>igi</metric>
+    <metric>iwi</metric>
     <enumeratedValueSet variable="nb-turtle">
       <value value="4"/>
     </enumeratedValueSet>
@@ -741,6 +742,7 @@ NetLogo 6.2.0
     <go>go</go>
     <timeLimit steps="100"/>
     <metric>igi</metric>
+    <metric>iwi</metric>
     <steppedValueSet variable="nb-turtle" first="1" step="1" last="10"/>
     <enumeratedValueSet variable="go-ahead">
       <value value="0.5"/>
@@ -754,6 +756,7 @@ NetLogo 6.2.0
     <go>go</go>
     <timeLimit steps="100"/>
     <metric>igi</metric>
+    <metric>iwi</metric>
     <enumeratedValueSet variable="nb-turtle">
       <value value="4"/>
     </enumeratedValueSet>
