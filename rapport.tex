@@ -27,17 +27,17 @@
 \newpage
 \setlength{\parindent}{0pt}
 \section*{Introduction}
-\paragraph{Ce projet a pour objectif de mod\'eliser aussi pr\'ecis\'ement que possible le probl\`eme de patrouille en utilisant l'approche d'\'evaporation des ph\'eromones.
+\paragraph{}Ce projet a pour objectif de mod\'eliser aussi pr\'ecis\'ement que possible le probl\`eme de patrouille en utilisant l'approche d'\'evaporation des ph\'eromones.
 Cette approche, inspir\'ee par l'\'etude des colonies d'insectes sociaux, a pour particularit\'e d'attribuer \`a chaque patch un taux de 'chemical' sp\'ecifique qui diminue avec le temps.
-Les agents ont alors pour fonction de maximiser autant que possible le taux de chemical des patchs autour d'eux, d'o\`u la n\'ecessit\'e de patrouiller et la pertinence de ce mod\`ele pour r\'esoudre ce probl\`eme.}
+Les agents ont alors pour fonction de maximiser autant que possible le taux de chemical des patchs autour d'eux, d'o\`u la n\'ecessit\'e de patrouiller et la pertinence de ce mod\`ele pour r\'esoudre ce probl\`eme.
 \section{Fonctionnement g\'en\'eral}
     \subsection{Les patchs}
-Les patchs se voient attribuer un bool\'een indiquant si ceux-ci sont des murs ou non (aussi distingu\'e par une couleur bleu qui leur est sp\'ecifique), un param\`etre chemical charg\'e d'indiquer le niveau de ph\'eromones de chaque cases ainsi qu'un param\`etre ini d\'estin\'e \`a \^etre utilis\'e \`a des fins d'observation statistiques.
+\paragraph{}Les patchs se voient attribuer un bool\'een indiquant si ceux-ci sont des murs ou non (aussi distingu\'e par une couleur bleu qui leur est sp\'ecifique), un param\`etre chemical charg\'e d'indiquer le niveau de ph\'eromones de chaque cases ainsi qu'un param\`etre ini d\'estin\'e \`a \^etre utilis\'e \`a des fins d'observation statistiques.
 Les patchs se voit attribuer une couleur \`a chaque tick, celle-ci varie selon leur niveau de chemical :
 plus celui-ci est proche de 1 plus le patch appara\^it vert, lorsqu'il se rapproche de 0 la case redevient noire. Le niveau de chemical est multipli\'e par 1 - p \`a chaque tick (p modulable) si le patch n'est pas un mur afin de simuler l'\'evaporation des ph\'eromones.
       
     \subsection{Les agents}
-Les agents sont charg\'es de maintenir le taux de chemical de tous les patchs le plus proche de 1 possible.
+\paragraph{}Les agents sont charg\'es de maintenir le taux de chemical de tous les patchs le plus proche de 1 possible.
 Ils fonctionnent de la mani\`ere suivante : \`a chaque tick, l'agent dresse la liste des patch ayant le niveau de chemical le plus faible parmi ses 4 voisins (uniquement sur la m\^eme ligne ou colonne). Une fois la liste cr\'e\'ee, l'agent va effectuer un mouvement ayant un pourcentage de chance d\'efini par le param\`etre 'go-ahead' de privil\'egier la case en face de lui si celle-ci fait partie de la liste, sinon l'agent fait simplement le mouvement vers une autre case de la liste en se tournant vers elle au pr\'ealable.
 
 Apr\`es avoir atteint un nouveau patch, l'agent indique \`a celui-ci son nouveau niveau de chemical ( \'egal \`a 1, la case devient verte) et reset son param\`etre ini \`a 0. Les agents ignorent les patchs correspondant \`a des murs car ceux-ci se voit attribuer une valeur fixe de chemical par d\'efaut de 2, il ne peuvent donc jamais correspondre au minimum de la liste, ce qui emp\^eche l'agent d'engager un d\'eplacement vers un mur.
