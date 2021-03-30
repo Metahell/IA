@@ -218,7 +218,7 @@ nb-turtle
 nb-turtle
 0
 10
-4.0
+1.0
 1
 1
 NIL
@@ -233,7 +233,7 @@ go-ahead
 go-ahead
 0
 1
-0.0
+1.0
 0.01
 1
 NIL
@@ -751,8 +751,38 @@ NetLogo 6.2.0
       <value value="0.005"/>
     </enumeratedValueSet>
   </experiment>
-  <experiment name="experiment go-ahead [0 .1 1]" repetitions="1" runMetricsEveryStep="true">
+  <experiment name="experiment go-ahead [0 .01 1]" repetitions="1" runMetricsEveryStep="true">
     <setup>setup</setup>
+    <go>go</go>
+    <timeLimit steps="10000"/>
+    <metric>igi</metric>
+    <metric>iwi</metric>
+    <enumeratedValueSet variable="nb-turtle">
+      <value value="4"/>
+    </enumeratedValueSet>
+    <steppedValueSet variable="go-ahead" first="0" step="0.01" last="1"/>
+    <enumeratedValueSet variable="p">
+      <value value="0.005"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="experiment turtles spirale[1 1 10]" repetitions="1" runMetricsEveryStep="true">
+    <setup>clear-chemicals
+place-turtles</setup>
+    <go>go</go>
+    <timeLimit steps="10000"/>
+    <metric>igi</metric>
+    <metric>iwi</metric>
+    <steppedValueSet variable="nb-turtle" first="1" step="1" last="10"/>
+    <enumeratedValueSet variable="go-ahead">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="p">
+      <value value="0.005"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="experiment go-ahead spirale [0 0.1 1]" repetitions="10" runMetricsEveryStep="true">
+    <setup>clear-chemicals
+place-turtles</setup>
     <go>go</go>
     <timeLimit steps="10000"/>
     <metric>igi</metric>
