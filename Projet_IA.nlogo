@@ -233,7 +233,7 @@ go-ahead
 go-ahead
 0
 1
-0.5
+0.0
 0.01
 1
 NIL
@@ -726,7 +726,7 @@ NetLogo 6.2.0
   <experiment name="experiment p [0.005 0.005 1]" repetitions="1" runMetricsEveryStep="true">
     <setup>setup</setup>
     <go>go</go>
-    <timeLimit steps="100"/>
+    <timeLimit steps="10000"/>
     <metric>igi</metric>
     <metric>iwi</metric>
     <enumeratedValueSet variable="nb-turtle">
@@ -740,7 +740,7 @@ NetLogo 6.2.0
   <experiment name="experiment turtles [1 1 10]" repetitions="1" runMetricsEveryStep="true">
     <setup>setup</setup>
     <go>go</go>
-    <timeLimit steps="100"/>
+    <timeLimit steps="10000"/>
     <metric>igi</metric>
     <metric>iwi</metric>
     <steppedValueSet variable="nb-turtle" first="1" step="1" last="10"/>
@@ -754,7 +754,7 @@ NetLogo 6.2.0
   <experiment name="experiment go-ahead [0 .1 1]" repetitions="1" runMetricsEveryStep="true">
     <setup>setup</setup>
     <go>go</go>
-    <timeLimit steps="100"/>
+    <timeLimit steps="10000"/>
     <metric>igi</metric>
     <metric>iwi</metric>
     <enumeratedValueSet variable="nb-turtle">
