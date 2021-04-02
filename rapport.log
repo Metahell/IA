@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.26)  30 MAR 2021 16:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.26)  1 APR 2021 16:02
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **d:/autres/Me/autre/Github/IA/rapport.tex
@@ -204,27 +204,119 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (d:/Programmes/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/svg/svg.sty
+Package: svg 2020/05/07 v2.02f (include SVG pictures)
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2020/04/19 v3.30 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2020/04/19 v3.30 KOMA-Script package (loading files)
+)) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+ (d:/Programmes/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (d:/Programmes/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\svg@box=\box49
+\c@svg@param@lastpage=\count276
+\c@svg@param@currpage=\count277
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+ (d:/Programmes/texlive/2020/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+ (d:/Programmes/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (d:/Programmes/texlive/2020/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+))) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/transparent/transparent.sty
+Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count278
+\calc@Bcount=\count279
+\calc@Adimen=\dimen174
+\calc@Bdimen=\dimen175
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count280
+\calc@Cskip=\skip54
+) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+ (d:/Programmes/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+))
+\AM@pagewidth=\dimen176
+\AM@pageheight=\dimen177
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box50
+\AM@global@opts=\toks26
+\AM@pagecnt=\count281
+\AM@toc@title=\toks27
+\c@AM@survey=\count282
+\AM@templatesizebox=\box51
+) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count283
+\c@ALC@line=\count284
+\c@ALC@rem=\count285
+\c@ALC@depth=\count286
+\ALC@tlm=\skip55
+\algorithmicindent=\skip56
+) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-05-05 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count276
-\l__pdf_internal_box=\box49
+\l__kernel_color_stack_int=\count287
+\l__pdf_internal_box=\box52
 ) (d:/autres/Me/autre/Github/IA/rapport.aux)
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -260,22 +352,22 @@ LaTeX Font Info:    ... okay on input line 23.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \degres on input line 23.
-LaTeX Info: Redefining \dots on input line 23.
-LaTeX Info: Redefining \up on input line 23.
+LaTeX Info: Redefining \degres on input line 26.
+LaTeX Info: Redefining \dots on input line 26.
+LaTeX Info: Redefining \up on input line 26.
 (d:/Programmes/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count277
-\scratchdimen=\dimen174
-\scratchbox=\box50
-\nofMPsegments=\count278
-\nofMParguments=\count279
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count280
-\MPscratchDim=\dimen175
-\MPnumerator=\count281
-\makeMPintoPDFobject=\count282
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count288
+\scratchdimen=\dimen178
+\scratchbox=\box53
+\nofMPsegments=\count289
+\nofMParguments=\count290
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count291
+\MPscratchDim=\dimen179
+\MPnumerator=\count292
+\makeMPintoPDFobject=\count293
+\everyMPtoPDFconversion=\toks29
 ) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -285,12 +377,25 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count283
-LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
+\c@lstlisting=\count294
+ (|'inkscape' -V)
+runsystem(call "inkscape" -V > rapport.svg.ink.ver.aux)...executed.
+
+runsystem(del rapport.svg.ink.ver.aux)...executed.
+
+\AtBeginShipoutBox=\box54
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
  (d:/Programmes/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
  (d:/Programmes/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -299,20 +404,30 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write3
 \openout3 = `rapport.toc'.
 
- [2] [3] [4] [5] (d:/autres/Me/autre/Github/IA/rapport.aux) ) 
+ [2]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 71.
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [3]
+<graphes pdf/variance tortues IGI spirale.pdf, id=25, 574.7457pt x 372.73111pt>
+File: graphes pdf/variance tortues IGI spirale.pdf Graphic file (type pdf)
+<use graphes pdf/variance tortues IGI spirale.pdf>
+Package pdftex.def Info: graphes pdf/variance tortues IGI spirale.pdf  used on input line 119.
+(pdftex.def)             Requested size: 483.69687pt x 313.69484pt.
+ [4] [5 <d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IGI spirale.pdf>] [6] (d:/autres/Me/autre/Github/IA/rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 6562 strings out of 480476
- 97285 string characters out of 5898102
- 359081 words of memory out of 5000000
- 22528 multiletter control sequences out of 15000+600000
- 544072 words of font info for 57 fonts, out of 8000000 for 9000
+ 9154 strings out of 480476
+ 140725 string characters out of 5898102
+ 434132 words of memory out of 5000000
+ 25014 multiletter control sequences out of 15000+600000
+ 546605 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,43p,253b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
-{d:/Programmes/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on d:/autres/Me/autre/Github/IA/rapport.pdf (5 pages, 140139 bytes).
+ 44i,6n,52p,339b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
+{d:/Programmes/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on d:/autres/Me/autre/Github/IA/rapport.pdf (6 pages, 206102 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
