@@ -10,9 +10,12 @@
 \contentsline {section}{\numberline {3}Algorithme}{4}%
 \contentsline {subsection}{\numberline {3.1}Algorithme des cases}{4}%
 \contentsline {subsection}{\numberline {3.2}Algorithme des agents}{4}%
-\contentsline {section}{\numberline {4}Étude des paramètres}{5}%
-\contentsline {subsection}{\numberline {4.1}Nombre d'agents}{5}%
-\contentsline {subsection}{\numberline {4.2}Probabilité d'aller tout droit}{5}%
+\contentsline {section}{\numberline {4}Étude des paramètres}{4}%
+\contentsline {subsection}{\numberline {4.1}Présentation des différents environnements}{4}%
+\contentsline {paragraph}{}{4}%
+\contentsline {paragraph}{}{5}%
+\contentsline {subsection}{\numberline {4.2}Nombre d'agents}{5}%
+\contentsline {subsection}{\numberline {4.3}Probabilité d'aller tout droit}{5}%
 \contentsline {section}{\numberline {5}Conclusion}{5}%
 \contentsline {subsection}{\numberline {5.1}}{5}%
 \contentsline {section}{\numberline {A}Récapitulatif des types et fonctions}{6}%

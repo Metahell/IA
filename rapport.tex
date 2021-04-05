@@ -114,6 +114,24 @@ résoudre ce problème.
         \ENDFOR
     \end{algorithmic}
 \section{Étude des paramètres}
+    \subsection{Présentation des différents environnements}
+        \paragraph{} Afin de comparer l'effet des différents paramètres de notre modèle, nous avons effectué plusieurs simulations sur différents environnements.
+        Le premier est une grille carrée de vingt cases par vingt cases, dont toutes les cases sont accessibles aux agents.
+
+        Le deuxième est une grille de même dimension mais contenant une spirale de cases obstacles.
+
+        Le dernier est une grille rectangulaire de vingt cases par vingt-cinq contenant un couloir centrale menant à six pièces, formées par des cases obstacles.
+        
+        \begin{figure}[!h]
+            \begin{center}
+                \includegraphics[width = \textwidth/4]{defaut_png.PNG}
+                \includegraphics[width = \textwidth/4]{spirale_png.PNG}
+                \includegraphics[width = \textwidth/4]{corridor_png.PNG}
+                \caption{Environnements de test \\ \textit{les obstacles sont en bleu, les cases normales en noir}}
+            \end{center}
+        \end{figure}
+
+        \paragraph{} Nous allons donc étudier les effets de deux paramètres : le nombre d'agent et la probabilité d'aller tout droit.
     \subsection{Nombre d'agents}
     \begin{center}
         \includegraphics[width = \textwidth]{graphes pdf/variance tortues IGI spirale.pdf}
