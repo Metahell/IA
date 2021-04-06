@@ -131,11 +131,57 @@ résoudre ce problème.
             \end{center}
         \end{figure}
 
-        \paragraph{} Nous allons donc étudier les effets de deux paramètres : le nombre d'agent et la probabilité d'aller tout droit.
+        \paragraph{} Nous allons donc étudier les effets de deux paramètres : le nombre d'agents et la probabilité d'aller tout droit.
     \subsection{Nombre d'agents}
-    \begin{center}
-        \includegraphics[width = \textwidth]{graphes pdf/variance tortues IGI spirale.pdf}
-    \end{center}
+        \paragraph{}Évidemment, l'efficacité de la patrouille augmente à mesure que l'on ajoute des agents.
+        \subsubsection{Environnement vide}
+            \paragraph{} On remarque sur les deux graphes de l'IGI et l'IWI que la valeur moyenne de ces deux paramètres est inversement proportionnelle au nombre d'agents.
+            Notamment, si l'on double le nombre d'agents, on diminue de moitié les moyennes de l'IGI et de l'IWI. Néanmoins, les valeurs maximales de ces deux paramètres ne suivent pas la même règle.
+            Même si la tendance reste la même, on peut remarquer que l'aléatoire présent dans le modèle (au niveau du choix des agents de la case suivante) a des conséquences non négligeables sur les
+            extrêmes.
+            \begin{figure}[!h]
+                \begin{center}
+                    \includegraphics[width = 0.7\textwidth]{graphes pdf/variance tortues IGI.pdf}
+                    \caption{IGI en fonction du nombre d'agents pour l'environnement vide}
+                \end{center}
+            \end{figure}
+            \begin{figure}[!h]
+                \begin{center}
+                    \includegraphics[width = 0.7\textwidth]{graphes pdf/variance tortues IWI.pdf}
+                    \caption{IWI en fonction du nombre d'agents pour l'environnement vide}
+                \end{center}
+            \end{figure}
+            \newpage
+        \subsubsection{Environnement en spirale}
+        \paragraph{} Contrairement à l'environnement vide, le nombre d'agents dans l'environnement en spirale n'est pas parfaitement inversement proportionnelle aux taux d'IGI et d'IWI.
+        Par exemple, on peut noter sur le graphique que passer de un à deux agents fait baisser l'IGI moyenne d'environ 60%
+            \begin{figure}[!h]
+                \begin{center}
+                    \includegraphics[width = 0.7\textwidth]{graphes pdf/variance tortues IGI spirale.pdf}
+                    \caption{IGI en fonction du nombre d'agents pour l'environnement en spirale}
+                \end{center}
+            \end{figure}
+            \begin{figure}[!h]
+                \begin{center}
+                    \includegraphics[width = 0.7\textwidth]{graphes pdf/variance tortues IWI spirale.pdf}
+                    \caption{IWI en fonction du nombre d'agents pour l'environnement spirale}
+                \end{center}
+            \end{figure}
+            \newpage
+        \subsubsection{Environnement en corridor}
+            \begin{figure}[!h]
+                \begin{center}
+                    \includegraphics[width = 0.7\textwidth]{graphes pdf/variance tortues IGI corridor.pdf}
+                    \caption{IGI en fonction du nombre d'agents pour l'environnement en corridor}
+                \end{center}
+            \end{figure}
+            \begin{figure}[!h]
+                \begin{center}
+                    \includegraphics[width = 0.7\textwidth]{graphes pdf/variance tortues IWI corridor.pdf}
+                    \caption{IWI en fonction du nombre d'agents pour l'environnement en corridor}
+                \end{center}
+            \end{figure}
+            \newpage
     \subsection{Probabilité d'aller tout droit}
 \section{Conclusion}
     \subsection{}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.26)  5 APR 2021 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.26)  6 APR 2021 16:22
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -419,31 +419,67 @@ File: spirale_png.PNG Graphic file (type png)
 <use spirale_png.PNG>
 Package pdftex.def Info: spirale_png.PNG  used on input line 128.
 (pdftex.def)             Requested size: 120.92421pt x 121.31326pt.
-<corridor_png.PNG, id=28, 231.86626pt x 288.3272pt>
+<corridor_png.PNG, id=28, 231.11343pt x 289.08pt>
 File: corridor_png.PNG Graphic file (type png)
 <use corridor_png.PNG>
 Package pdftex.def Info: corridor_png.PNG  used on input line 129.
-(pdftex.def)             Requested size: 120.92421pt x 150.37094pt.
+(pdftex.def)             Requested size: 120.92421pt x 151.25317pt.
  [4 <d:/autres/Me/autre/Github/IA/defaut_png.PNG> <d:/autres/Me/autre/Github/IA/spirale_png.PNG> <d:/autres/Me/autre/Github/IA/corridor_png.PNG>]
-<graphes pdf/variance tortues IGI spirale.pdf, id=36, 574.7457pt x 372.73111pt>
+<graphes pdf/variance tortues IGI.pdf, id=36, 799.52248pt x 469.47046pt>
+File: graphes pdf/variance tortues IGI.pdf Graphic file (type pdf)
+<use graphes pdf/variance tortues IGI.pdf>
+Package pdftex.def Info: graphes pdf/variance tortues IGI.pdf  used on input line 144.
+(pdftex.def)             Requested size: 338.58632pt x 198.81668pt.
+<graphes pdf/variance tortues IWI.pdf, id=37, 739.77165pt x 466.6252pt>
+File: graphes pdf/variance tortues IWI.pdf Graphic file (type pdf)
+<use graphes pdf/variance tortues IWI.pdf>
+Package pdftex.def Info: graphes pdf/variance tortues IWI.pdf  used on input line 150.
+(pdftex.def)             Requested size: 338.58632pt x 213.57506pt.
+ [5 <d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IGI.pdf> <d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IWI.pdf
+
+pdfTeX warning: pdflatex.exe (file d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IWI.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<graphes pdf/variance tortues IGI spirale.pdf, id=56, 574.7457pt x 372.73111pt>
 File: graphes pdf/variance tortues IGI spirale.pdf Graphic file (type pdf)
 <use graphes pdf/variance tortues IGI spirale.pdf>
-Package pdftex.def Info: graphes pdf/variance tortues IGI spirale.pdf  used on input line 137.
-(pdftex.def)             Requested size: 483.69687pt x 313.69484pt.
- [5 <d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IGI spirale.pdf>] [6] (d:/autres/Me/autre/Github/IA/rapport.aux) ) 
+Package pdftex.def Info: graphes pdf/variance tortues IGI spirale.pdf  used on input line 160.
+(pdftex.def)             Requested size: 338.58632pt x 219.58525pt.
+<graphes pdf/variance tortues IWI spirale.pdf, id=57, 685.71141pt x 381.26694pt>
+File: graphes pdf/variance tortues IWI spirale.pdf Graphic file (type pdf)
+<use graphes pdf/variance tortues IWI spirale.pdf>
+Package pdftex.def Info: graphes pdf/variance tortues IWI spirale.pdf  used on input line 166.
+(pdftex.def)             Requested size: 338.58632pt x 188.2652pt.
+ [6 <d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IGI spirale.pdf> <d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IWI spirale.pdf
+
+pdfTeX warning: pdflatex.exe (file d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IWI spirale.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<graphes pdf/variance tortues IGI corridor.pdf, id=76, 631.65117pt x 332.89723pt>
+File: graphes pdf/variance tortues IGI corridor.pdf Graphic file (type pdf)
+<use graphes pdf/variance tortues IGI corridor.pdf>
+Package pdftex.def Info: graphes pdf/variance tortues IGI corridor.pdf  used on input line 174.
+(pdftex.def)             Requested size: 338.58632pt x 178.4462pt.
+<graphes pdf/variance tortues IWI corridor.pdf, id=77, 631.65117pt x 332.89723pt>
+File: graphes pdf/variance tortues IWI corridor.pdf Graphic file (type pdf)
+<use graphes pdf/variance tortues IWI corridor.pdf>
+Package pdftex.def Info: graphes pdf/variance tortues IWI corridor.pdf  used on input line 180.
+(pdftex.def)             Requested size: 338.58632pt x 178.4462pt.
+ [7 <d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IGI corridor.pdf> <d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IWI corridor.pdf
+
+pdfTeX warning: pdflatex.exe (file d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IWI corridor.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [8] [9] (d:/autres/Me/autre/Github/IA/rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 9181 strings out of 480476
- 141179 string characters out of 5898102
+ 9211 strings out of 480476
+ 142580 string characters out of 5898102
  435132 words of memory out of 5000000
- 25036 multiletter control sequences out of 15000+600000
+ 25061 multiletter control sequences out of 15000+600000
  547278 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,6n,52p,339b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,7n,52p,339b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/Programmes/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on d:/autres/Me/autre/Github/IA/rapport.pdf (6 pages, 221238 bytes).
+Output written on d:/autres/Me/autre/Github/IA/rapport.pdf (9 pages, 274126 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
+ 149 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
