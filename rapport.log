@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.26)  6 APR 2021 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.26)  6 APR 2021 16:45
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -466,20 +466,62 @@ Package pdftex.def Info: graphes pdf/variance tortues IWI corridor.pdf  used on 
  [7 <d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IGI corridor.pdf> <d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IWI corridor.pdf
 
 pdfTeX warning: pdflatex.exe (file d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IWI corridor.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [8] [9] (d:/autres/Me/autre/Github/IA/rapport.aux) ) 
+>]
+<graphes pdf/variance go-ahead IGI.pdf, id=97, 805.21298pt x 438.17244pt>
+File: graphes pdf/variance go-ahead IGI.pdf Graphic file (type pdf)
+<use graphes pdf/variance go-ahead IGI.pdf>
+Package pdftex.def Info: graphes pdf/variance go-ahead IGI.pdf  used on input line 192.
+(pdftex.def)             Requested size: 483.69687pt x 263.21973pt.
+<graphes pdf/variance go-ahead IWI.pdf, id=98, 805.21298pt x 438.17244pt>
+File: graphes pdf/variance go-ahead IWI.pdf Graphic file (type pdf)
+<use graphes pdf/variance go-ahead IWI.pdf>
+Package pdftex.def Info: graphes pdf/variance go-ahead IWI.pdf  used on input line 195.
+(pdftex.def)             Requested size: 483.69687pt x 263.21973pt.
+ [8 <d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IGI.pdf> <d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IWI.pdf
+
+pdfTeX warning: pdflatex.exe (file d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IWI.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<graphes pdf/variance go-ahead IGI corridor.pdf, id=117, 688.55669pt x 361.35pt>
+File: graphes pdf/variance go-ahead IGI corridor.pdf Graphic file (type pdf)
+<use graphes pdf/variance go-ahead IGI corridor.pdf>
+Package pdftex.def Info: graphes pdf/variance go-ahead IGI corridor.pdf  used on input line 201.
+(pdftex.def)             Requested size: 483.69687pt x 253.84753pt.
+<graphes pdf/variance go-ahead IWI corridor.pdf, id=118, 688.55669pt x 361.35pt>
+File: graphes pdf/variance go-ahead IWI corridor.pdf Graphic file (type pdf)
+<use graphes pdf/variance go-ahead IWI corridor.pdf>
+Package pdftex.def Info: graphes pdf/variance go-ahead IWI corridor.pdf  used on input line 204.
+(pdftex.def)             Requested size: 483.69687pt x 253.84753pt.
+<graphes pdf/variance go-ahead IGI spirale.pdf, id=119, 759.6886pt x 384.1122pt>
+File: graphes pdf/variance go-ahead IGI spirale.pdf Graphic file (type pdf)
+<use graphes pdf/variance go-ahead IGI spirale.pdf>
+Package pdftex.def Info: graphes pdf/variance go-ahead IGI spirale.pdf  used on input line 210.
+(pdftex.def)             Requested size: 483.69687pt x 244.57083pt.
+ [9 <d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IGI corridor.pdf> <d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IWI corridor.pdf
+
+pdfTeX warning: pdflatex.exe (file d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IWI corridor.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<graphes pdf/variance go-ahead IWI spirale.pdf, id=138, 759.6886pt x 384.1122pt>
+File: graphes pdf/variance go-ahead IWI spirale.pdf Graphic file (type pdf)
+<use graphes pdf/variance go-ahead IWI spirale.pdf>
+Package pdftex.def Info: graphes pdf/variance go-ahead IWI spirale.pdf  used on input line 213.
+(pdftex.def)             Requested size: 483.69687pt x 244.57083pt.
+ [10 <d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IGI spirale.pdf> <d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IWI spirale.pdf
+
+pdfTeX warning: pdflatex.exe (file d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IWI spirale.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [11] (d:/autres/Me/autre/Github/IA/rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 9211 strings out of 480476
- 142580 string characters out of 5898102
+ 9247 strings out of 480476
+ 144314 string characters out of 5898102
  435132 words of memory out of 5000000
- 25061 multiletter control sequences out of 15000+600000
+ 25091 multiletter control sequences out of 15000+600000
  547278 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,7n,52p,339b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/Programmes/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on d:/autres/Me/autre/Github/IA/rapport.pdf (9 pages, 273427 bytes).
+Output written on d:/autres/Me/autre/Github/IA/rapport.pdf (11 pages, 351211 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
+ 207 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
