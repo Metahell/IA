@@ -183,6 +183,35 @@ résoudre ce problème.
             \end{figure}
             \newpage
     \subsection{Probabilité d'aller tout droit}
+    \paragraph{}La probabilité d'aller tout droit, notée ici 'go-ahead', détermine la probabilité qu'un agent donne la priorité à une case directement en face de lui si elle a le niveau le plus faible de chemical dans la proximité directe de l'agent.
+    Dans le cas contraire, la case choisie va avoir un niveau de chemical minimal mais pas nécessairement celle faisant face à l'agent. 
+    \subsubsection{Défaut}
+    \paragraph{}On observe que les tendances moyennes d'IGI et d'IWI reste stable avec la variation de go-ahead. Cet environnement étant dénué de mur, toutes les cases doivent être visitées pour limiter les valeurs maximales d'IWI et d'IGI.
+    On n'observe donc aucune tendance particulière avec la variation de go-ahead.
+    \begin{center}
+        \includegraphics[width = \textwidth]{graphes pdf/variance go-ahead IGI.pdf}
+    \end{center}
+    \begin{center}
+        \includegraphics[width = \textwidth]{graphes pdf/variance go-ahead IWI.pdf}
+    \end{center}
+    \subsubsection{Corridor}
+    \paragraph{}On observe que les tendances moyennes d'IGI et d'IWI reste stable avec la variation de go-ahead. La forme spéciale de cet environnement tend à faire baisser les valeurs maximales d'IGI et d'IWI lorsque go-ahead tend  vers 1.
+    Si la probabilité d'aller tout droit augmente, de nouvelles zones qui n'ont pas été visitée vont être atteintes plus vite par les agents, ce qui contribue à baisser IGI et IWI.
+    \begin{center}
+        \includegraphics[width = \textwidth]{graphes pdf/variance go-ahead IGI corridor.pdf}
+    \end{center}
+    \begin{center}
+        \includegraphics[width = \textwidth]{graphes pdf/variance go-ahead IWI corridor.pdf}
+    \end{center}
+    \subsubsection{Spirale}
+    \paragraph{}On observe que les tendances moyennes d'IGI et d'IWI reste stable avec la variation de go-ahead. Cependant, les valeurs maximales tendent à diminuer à mesure que la probabilité d'aller tout droit se rapproche de 1.
+    Ceci peut s'expliquer par la forme spirale, qui demande d'être parcourue entièrement et donc d'atteindre le centre en effectuant le moins de détours possible pour avoir des valeurs d'IGI et d'IWI les plus basses.
+    \begin{center}
+        \includegraphics[width = \textwidth]{graphes pdf/variance go-ahead IGI spirale.pdf}
+    \end{center}
+    \begin{center}
+        \includegraphics[width = \textwidth]{graphes pdf/variance go-ahead IWI spirale.pdf}
+    \end{center}
 \section{Conclusion}
     \subsection{}
 
