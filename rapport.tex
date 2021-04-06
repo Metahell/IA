@@ -12,7 +12,7 @@
 \usepackage{svg}
 \usepackage{pdfpages}
 \usepackage{algorithmic}
-
+\usepackage[hidelinks]{hyperref}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
 \newcommand{\hsp}{\hspace{20pt}}
@@ -124,9 +124,9 @@ résoudre ce problème.
         
         \begin{figure}[!h]
             \begin{center}
-                \includegraphics[width = \textwidth/4]{defaut_png.PNG}
-                \includegraphics[width = \textwidth/4]{spirale_png.PNG}
-                \includegraphics[width = \textwidth/4]{corridor_png.PNG}
+                \includegraphics[width = \textwidth/5]{defaut_png.PNG}
+                \includegraphics[width = \textwidth/5]{spirale_png.PNG}
+                \includegraphics[width = \textwidth/5]{corridor_png.PNG}
                 \caption{Environnements de test \\ \textit{les obstacles sont en bleu, les cases normales en noir}}
             \end{center}
         \end{figure}
@@ -141,83 +141,114 @@ résoudre ce problème.
             extrêmes.
             \begin{figure}[!h]
                 \begin{center}
-                    \includegraphics[width = 0.7\textwidth]{graphes pdf/variance tortues IGI.pdf}
+                    \includegraphics[width = 0.82\textwidth]{graphes pdf/variance tortues IGI.pdf}
                     \caption{IGI en fonction du nombre d'agents pour l'environnement vide}
                 \end{center}
             \end{figure}
             \begin{figure}[!h]
                 \begin{center}
-                    \includegraphics[width = 0.7\textwidth]{graphes pdf/variance tortues IWI.pdf}
+                    \includegraphics[width = 0.82\textwidth]{graphes pdf/variance tortues IWI.pdf}
                     \caption{IWI en fonction du nombre d'agents pour l'environnement vide}
                 \end{center}
             \end{figure}
             \newpage
         \subsubsection{Environnement en spirale}
         \paragraph{} Contrairement à l'environnement vide, le nombre d'agents dans l'environnement en spirale n'est pas parfaitement inversement proportionnelle aux taux d'IGI et d'IWI.
-        Par exemple, on peut noter sur le graphique que passer de un à deux agents fait baisser l'IGI moyenne d'environ 62 \% mais que passer de 
+        Par exemple, on peut noter sur le graphique que passer de un à deux agents fait baisser l'IGI moyenne d'environ 62 \%, Contrairement aux 50 \% auquel on pourrait s'attendre.
+        On remarque également que l'écart entre les maximums et les moyennes des valeurs est beaucoup plus élevé que dans l'environnement vide. Ainsi, le maximum d'IWI dans l'environnement vide à un agent valait 1,5 fois la valeurs de la moyenne, tandis qu'avec un agent dans l'environnement en spirale, le maximum d'IWI est 4,4 fois supérieur à sa moyenne.
+        Enfin, on peut noter que les valeurs maximum de l'IGI et de l'IWI pour trois et quatre agents sont plus élevées que celles pour deux agents, ce qui montre que l'aléatoire a un plus grand impact sur cet environnement que sur le précédent.
             \begin{figure}[!h]
                 \begin{center}
-                    \includegraphics[width = 0.7\textwidth]{graphes pdf/variance tortues IGI spirale.pdf}
+                    \includegraphics[width = 0.82\textwidth]{graphes pdf/variance tortues IGI spirale.pdf}
                     \caption{IGI en fonction du nombre d'agents pour l'environnement en spirale}
                 \end{center}
             \end{figure}
             \begin{figure}[!h]
                 \begin{center}
-                    \includegraphics[width = 0.7\textwidth]{graphes pdf/variance tortues IWI spirale.pdf}
+                    \includegraphics[width = 0.82\textwidth]{graphes pdf/variance tortues IWI spirale.pdf}
                     \caption{IWI en fonction du nombre d'agents pour l'environnement spirale}
                 \end{center}
             \end{figure}
             \newpage
         \subsubsection{Environnement en corridor}
+            \paragraph{} Contrairement à l'environnement en spirale, où passer de un à deux agents était plus avantageux que ce à quoi on aurait pu s'attendre, passer de un à deux agents sur l'environnement en corridor ne donne qu'une baisse de 40 \% pour l'IGI moyenne et de 20 \% pour l'IWI moyenne.
+            De même, passer de deux à quatre agent ne fait baisser l'IWI que de 44 \% mais divise bien l'IGI moyen par deux. La disposition en corridor a donc pour effet de diminuer l'avantage apporté par des agents supplémentaires lorsque le nombre d'agents est faible.
+            On remarque aussi que les valeurs maximum des deux paramètres peuvent croître en même temps que le nombre d'agents. Cette configuration en corridor a ainsi un risque important de comporter des cases qui ne sont pas visitées pendant un grand nombre de pas proportionnellement au nombre d'agents, quelque soit ce dernier.
+
             \begin{figure}[!h]
                 \begin{center}
-                    \includegraphics[width = 0.7\textwidth]{graphes pdf/variance tortues IGI corridor.pdf}
+                    \includegraphics[width = 0.82\textwidth]{graphes pdf/variance tortues IGI corridor.pdf}
                     \caption{IGI en fonction du nombre d'agents pour l'environnement en corridor}
                 \end{center}
             \end{figure}
             \begin{figure}[!h]
                 \begin{center}
-                    \includegraphics[width = 0.7\textwidth]{graphes pdf/variance tortues IWI corridor.pdf}
+                    \includegraphics[width = 0.82\textwidth]{graphes pdf/variance tortues IWI corridor.pdf}
                     \caption{IWI en fonction du nombre d'agents pour l'environnement en corridor}
                 \end{center}
             \end{figure}
             \newpage
-    \subsection{Probabilité d'aller tout droit}
-    \paragraph{}La probabilité d'aller tout droit, notée ici 'go-ahead', détermine la probabilité qu'un agent donne la priorité à une case directement en face de lui si elle a le niveau le plus faible de chemical dans la proximité directe de l'agent.
+    \subsection{Valeur de \texorpdfstring{$p_{avant}$}{p\_avant}}
+    \paragraph{}Pour rappel, $p_{avant}$ détermine la probabilité qu'un agent donne la priorité à une case directement en face de lui si elle a le niveau le plus faible de chemical dans la proximité directe de l'agent.
     Dans le cas contraire, la case choisie va avoir un niveau de chemical minimal mais pas nécessairement celle faisant face à l'agent. 
-    \subsubsection{Défaut}
-    \paragraph{}On observe que les tendances moyennes d'IGI et d'IWI reste stable avec la variation de go-ahead. Cet environnement étant dénué de mur, toutes les cases doivent être visitées pour limiter les valeurs maximales d'IWI et d'IGI.
-    On n'observe donc aucune tendance particulière avec la variation de go-ahead.
-    \begin{center}
-        \includegraphics[width = \textwidth]{graphes pdf/variance go-ahead IGI.pdf}
-    \end{center}
-    \begin{center}
-        \includegraphics[width = \textwidth]{graphes pdf/variance go-ahead IWI.pdf}
-    \end{center}
-    \subsubsection{Corridor}
-    \paragraph{}On observe que les tendances moyennes d'IGI et d'IWI reste stable avec la variation de go-ahead. La forme spéciale de cet environnement tend à faire baisser les valeurs maximales d'IGI et d'IWI lorsque go-ahead tend  vers 1.
-    Si la probabilité d'aller tout droit augmente, de nouvelles zones qui n'ont pas été visitée vont être atteintes plus vite par les agents, ce qui contribue à baisser IGI et IWI.
-    \begin{center}
-        \includegraphics[width = \textwidth]{graphes pdf/variance go-ahead IGI corridor.pdf}
-    \end{center}
-    \begin{center}
-        \includegraphics[width = \textwidth]{graphes pdf/variance go-ahead IWI corridor.pdf}
-    \end{center}
-    \subsubsection{Spirale}
-    \paragraph{}On observe que les tendances moyennes d'IGI et d'IWI reste stable avec la variation de go-ahead. Cependant, les valeurs maximales tendent à diminuer à mesure que la probabilité d'aller tout droit se rapproche de 1.
+    \subsubsection{Environnement vide}
+    \paragraph{}On observe que les tendances moyennes d'IGI et d'IWI reste stable avec la variation de $p_{avant}$. Cet environnement étant dénué de mur, toutes les cases doivent être visitées pour limiter les valeurs maximales d'IWI et d'IGI.
+    On n'observe donc aucune tendance particulière avec la variation de $p_{avant}$.
+    \begin{figure}[!h]
+        \begin{center}
+            \includegraphics[width = 0.82\textwidth]{graphes pdf/variance go-ahead IGI.pdf}
+            \caption{IGI en fonction de $p_{avant}$ pour l'environnement vide}
+        \end{center}
+    \end{figure}
+    \begin{figure}[!h]
+        \begin{center}
+            \includegraphics[width = 0.82\textwidth]{graphes pdf/variance go-ahead IWI.pdf}
+            \caption{IWI en fonction de $p_{avant}$ pour l'environnement vide}
+        \end{center}
+    \end{figure}
+    \newpage
+    \subsubsection{Environnement en spirale}
+    \paragraph{}On observe que les tendances moyennes d'IGI et d'IWI reste stable avec la variation de $p_{avant}$. Cependant, les valeurs maximales tendent à diminuer à mesure que la probabilité d'aller tout droit se rapproche de 1.
     Ceci peut s'expliquer par la forme spirale, qui demande d'être parcourue entièrement et donc d'atteindre le centre en effectuant le moins de détours possible pour avoir des valeurs d'IGI et d'IWI les plus basses.
-    \begin{center}
-        \includegraphics[width = \textwidth]{graphes pdf/variance go-ahead IGI spirale.pdf}
-    \end{center}
-    \begin{center}
-        \includegraphics[width = \textwidth]{graphes pdf/variance go-ahead IWI spirale.pdf}
-    \end{center}
+    \begin{figure}[!h]
+        \begin{center}
+            \includegraphics[width = 0.82\textwidth]{graphes pdf/variance go-ahead IGI spirale.pdf}
+            \caption{IGI en fonction de $p_{avant}$ pour l'environnement en spirale}
+        \end{center}
+    \end{figure}
+    \begin{figure}[!h]
+        \begin{center}
+            \includegraphics[width = 0.82\textwidth]{graphes pdf/variance go-ahead IWI spirale.pdf}
+            \caption{IWI en fonction de $p_{avant}$ pour l'environnement en spirale}
+        \end{center}
+    \end{figure}
+    \newpage
+    \subsubsection{Environnement en corridor}
+    \paragraph{}On observe que les tendances moyennes d'IGI et d'IWI reste stable avec la variation de $p_{avant}$. La forme spéciale de cet environnement tend à faire baisser les valeurs maximales d'IGI et d'IWI lorsque $p_{avant}$ tend  vers 1.
+    Si la probabilité d'aller tout droit augmente, de nouvelles zones qui n'ont pas été visitée vont être atteintes plus vite par les agents, ce qui contribue à baisser IGI et IWI.
+    \begin{figure}[!h]
+        \begin{center}
+            \includegraphics[width = 0.82\textwidth]{graphes pdf/variance go-ahead IGI corridor.pdf}
+            \caption{IGI en fonction de $p_{avant}$ pour l'environnement en corridor}
+        \end{center}
+    \end{figure}
+    \begin{figure}[!h]
+        \begin{center}
+            \includegraphics[width = 0.82\textwidth]{graphes pdf/variance go-ahead IWI corridor.pdf}
+            \caption{IWI en fonction de $p_{avant}$ pour l'environnement en corridor}
+        \end{center}
+    \end{figure}
 \section{Conclusion}
-    \subsection{}
 
 \appendix
-\newpage
-\section{Récapitulatif des types et fonctions}
-
+\section{Annexe}
+\listoffigures
+\section*{Bibliographie}
+\begin{thebibliography}{1}
+    \bibitem{Swarm Approaches for the Patrolling Problem, Information Propagation vs. Pheromone Evaporation}
+    Hoang-Nam Chu, Arnaud Glad, Olivier Simonin, François Sempé, Alexis Drogoul, François Charpillet.
+    \textit{Swarm Approaches for the Patrolling Problem, Information Propagation vs. Pheromone Evaporation}
+    Tools with Artificial Intelligence, 2007.
+\end{thebibliography}
 
 \end{document}

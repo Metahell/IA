@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.26)  6 APR 2021 16:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.26)  6 APR 2021 17:29
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -296,9 +296,87 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@depth=\count286
 \ALC@tlm=\skip55
 \algorithmicindent=\skip56
+) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+ (d:/Programmes/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (d:/Programmes/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (d:/Programmes/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen178
+\Hy@linkcounter=\count287
+\Hy@pagecounter=\count288
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (d:/Programmes/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count289
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count290
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen179
+ (d:/Programmes/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (d:/Programmes/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count291
+\Field@Width=\dimen180
+\Fld@charsize=\dimen181
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+\Hy@abspage=\count292
+\c@Item=\count293
+\c@Hfootnote=\count294
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count295
+\c@bookmark@seq@number=\count296
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (d:/Programmes/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)
+\Hy@SectionHShift=\skip57
 ) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-05-05 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count287
+\l__kernel_color_stack_int=\count297
 \l__pdf_internal_box=\box52
 ) (d:/autres/Me/autre/Github/IA/rapport.aux)
 \openout1 = `rapport.aux'.
@@ -316,6 +394,8 @@ LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 
 *geometry* driver: auto-detecting
@@ -357,16 +437,16 @@ LaTeX Info: Redefining \dots on input line 26.
 LaTeX Info: Redefining \up on input line 26.
 (d:/Programmes/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count288
-\scratchdimen=\dimen178
+\scratchcounter=\count298
+\scratchdimen=\dimen182
 \scratchbox=\box53
-\nofMPsegments=\count289
-\nofMParguments=\count290
+\nofMPsegments=\count299
+\nofMParguments=\count300
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count291
-\MPscratchDim=\dimen179
-\MPnumerator=\count292
-\makeMPintoPDFobject=\count293
+\MPscratchCnt=\count301
+\MPscratchDim=\dimen183
+\MPnumerator=\count302
+\makeMPintoPDFobject=\count303
 \everyMPtoPDFconversion=\toks29
 ) (d:/Programmes/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -375,9 +455,10 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count294
+\c@lstlisting=\count304
  (|'inkscape' -V)
 runsystem(call "inkscape" -V > rapport.svg.ink.ver.aux)...executed.
 
@@ -391,137 +472,167 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+Package hyperref Info: Link coloring OFF on input line 26.
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+ (d:/Programmes/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (d:/Programmes/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count305
+)
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
+ (d:/autres/Me/autre/Github/IA/rapport.out) (d:/autres/Me/autre/Github/IA/rapport.out)
+\@outlinefile=\write3
+\openout3 = `rapport.out'.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
  (d:/Programmes/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
  (d:/Programmes/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {d:/Programmes/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (d:/autres/Me/autre/Github/IA/rapport.toc)
-\tf@toc=\write3
-\openout3 = `rapport.toc'.
+\tf@toc=\write4
+\openout4 = `rapport.toc'.
 
  [2]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 71.
  (d:/Programmes/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [3]
-<defaut_png.PNG, id=25, 232.61906pt x 231.86626pt>
+<defaut_png.PNG, id=131, 232.61906pt x 231.86626pt>
 File: defaut_png.PNG Graphic file (type png)
 <use defaut_png.PNG>
 Package pdftex.def Info: defaut_png.PNG  used on input line 127.
-(pdftex.def)             Requested size: 120.92421pt x 120.53221pt.
-<spirale_png.PNG, id=27, 233.37187pt x 234.1247pt>
+(pdftex.def)             Requested size: 96.73936pt x 96.42436pt.
+<spirale_png.PNG, id=133, 233.37187pt x 234.1247pt>
 File: spirale_png.PNG Graphic file (type png)
 <use spirale_png.PNG>
 Package pdftex.def Info: spirale_png.PNG  used on input line 128.
-(pdftex.def)             Requested size: 120.92421pt x 121.31326pt.
-<corridor_png.PNG, id=28, 231.11343pt x 289.08pt>
+(pdftex.def)             Requested size: 96.73936pt x 97.05275pt.
+<corridor_png.PNG, id=134, 231.11343pt x 289.08pt>
 File: corridor_png.PNG Graphic file (type png)
 <use corridor_png.PNG>
 Package pdftex.def Info: corridor_png.PNG  used on input line 129.
-(pdftex.def)             Requested size: 120.92421pt x 151.25317pt.
+(pdftex.def)             Requested size: 96.73936pt x 121.00253pt.
  [4 <d:/autres/Me/autre/Github/IA/defaut_png.PNG> <d:/autres/Me/autre/Github/IA/spirale_png.PNG> <d:/autres/Me/autre/Github/IA/corridor_png.PNG>]
-<graphes pdf/variance tortues IGI.pdf, id=36, 799.52248pt x 469.47046pt>
+<graphes pdf/variance tortues IGI.pdf, id=169, 799.52248pt x 469.47046pt>
 File: graphes pdf/variance tortues IGI.pdf Graphic file (type pdf)
 <use graphes pdf/variance tortues IGI.pdf>
 Package pdftex.def Info: graphes pdf/variance tortues IGI.pdf  used on input line 144.
-(pdftex.def)             Requested size: 338.58632pt x 198.81668pt.
-<graphes pdf/variance tortues IWI.pdf, id=37, 739.77165pt x 466.6252pt>
+(pdftex.def)             Requested size: 396.63496pt x 232.90077pt.
+<graphes pdf/variance tortues IWI.pdf, id=170, 739.77165pt x 466.6252pt>
 File: graphes pdf/variance tortues IWI.pdf Graphic file (type pdf)
 <use graphes pdf/variance tortues IWI.pdf>
 Package pdftex.def Info: graphes pdf/variance tortues IWI.pdf  used on input line 150.
-(pdftex.def)             Requested size: 338.58632pt x 213.57506pt.
+(pdftex.def)             Requested size: 396.63496pt x 250.1867pt.
  [5 <d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IGI.pdf> <d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IWI.pdf
 
 pdfTeX warning: pdflatex.exe (file d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IWI.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<graphes pdf/variance tortues IGI spirale.pdf, id=56, 574.7457pt x 372.73111pt>
+<graphes pdf/variance tortues IGI spirale.pdf, id=194, 574.7457pt x 372.73111pt>
 File: graphes pdf/variance tortues IGI spirale.pdf Graphic file (type pdf)
 <use graphes pdf/variance tortues IGI spirale.pdf>
-Package pdftex.def Info: graphes pdf/variance tortues IGI spirale.pdf  used on input line 160.
-(pdftex.def)             Requested size: 338.58632pt x 219.58525pt.
-<graphes pdf/variance tortues IWI spirale.pdf, id=57, 685.71141pt x 381.26694pt>
+Package pdftex.def Info: graphes pdf/variance tortues IGI spirale.pdf  used on input line 162.
+(pdftex.def)             Requested size: 396.63496pt x 257.23022pt.
+<graphes pdf/variance tortues IWI spirale.pdf, id=195, 685.71141pt x 381.26694pt>
 File: graphes pdf/variance tortues IWI spirale.pdf Graphic file (type pdf)
 <use graphes pdf/variance tortues IWI spirale.pdf>
-Package pdftex.def Info: graphes pdf/variance tortues IWI spirale.pdf  used on input line 166.
-(pdftex.def)             Requested size: 338.58632pt x 188.2652pt.
+Package pdftex.def Info: graphes pdf/variance tortues IWI spirale.pdf  used on input line 168.
+(pdftex.def)             Requested size: 396.63496pt x 220.54156pt.
  [6 <d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IGI spirale.pdf> <d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IWI spirale.pdf
 
 pdfTeX warning: pdflatex.exe (file d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IWI spirale.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<graphes pdf/variance tortues IGI corridor.pdf, id=76, 631.65117pt x 332.89723pt>
+<graphes pdf/variance tortues IGI corridor.pdf, id=218, 631.65117pt x 332.89723pt>
 File: graphes pdf/variance tortues IGI corridor.pdf Graphic file (type pdf)
 <use graphes pdf/variance tortues IGI corridor.pdf>
-Package pdftex.def Info: graphes pdf/variance tortues IGI corridor.pdf  used on input line 174.
-(pdftex.def)             Requested size: 338.58632pt x 178.4462pt.
-<graphes pdf/variance tortues IWI corridor.pdf, id=77, 631.65117pt x 332.89723pt>
+Package pdftex.def Info: graphes pdf/variance tortues IGI corridor.pdf  used on input line 180.
+(pdftex.def)             Requested size: 396.63496pt x 209.0406pt.
+<graphes pdf/variance tortues IWI corridor.pdf, id=219, 631.65117pt x 332.89723pt>
 File: graphes pdf/variance tortues IWI corridor.pdf Graphic file (type pdf)
 <use graphes pdf/variance tortues IWI corridor.pdf>
-Package pdftex.def Info: graphes pdf/variance tortues IWI corridor.pdf  used on input line 180.
-(pdftex.def)             Requested size: 338.58632pt x 178.4462pt.
+Package pdftex.def Info: graphes pdf/variance tortues IWI corridor.pdf  used on input line 186.
+(pdftex.def)             Requested size: 396.63496pt x 209.0406pt.
  [7 <d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IGI corridor.pdf> <d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IWI corridor.pdf
 
 pdfTeX warning: pdflatex.exe (file d:/autres/Me/autre/Github/IA/graphes pdf/variance tortues IWI corridor.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<graphes pdf/variance go-ahead IGI.pdf, id=97, 805.21298pt x 438.17244pt>
+<graphes pdf/variance go-ahead IGI.pdf, id=243, 805.21298pt x 438.17244pt>
 File: graphes pdf/variance go-ahead IGI.pdf Graphic file (type pdf)
 <use graphes pdf/variance go-ahead IGI.pdf>
-Package pdftex.def Info: graphes pdf/variance go-ahead IGI.pdf  used on input line 192.
-(pdftex.def)             Requested size: 483.69687pt x 263.21973pt.
-<graphes pdf/variance go-ahead IWI.pdf, id=98, 805.21298pt x 438.17244pt>
+Package pdftex.def Info: graphes pdf/variance go-ahead IGI.pdf  used on input line 199.
+(pdftex.def)             Requested size: 396.63496pt x 215.84297pt.
+<graphes pdf/variance go-ahead IWI.pdf, id=244, 805.21298pt x 438.17244pt>
 File: graphes pdf/variance go-ahead IWI.pdf Graphic file (type pdf)
 <use graphes pdf/variance go-ahead IWI.pdf>
-Package pdftex.def Info: graphes pdf/variance go-ahead IWI.pdf  used on input line 195.
-(pdftex.def)             Requested size: 483.69687pt x 263.21973pt.
+Package pdftex.def Info: graphes pdf/variance go-ahead IWI.pdf  used on input line 205.
+(pdftex.def)             Requested size: 396.63496pt x 215.84297pt.
  [8 <d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IGI.pdf> <d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IWI.pdf
 
 pdfTeX warning: pdflatex.exe (file d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IWI.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<graphes pdf/variance go-ahead IGI corridor.pdf, id=117, 688.55669pt x 361.35pt>
-File: graphes pdf/variance go-ahead IGI corridor.pdf Graphic file (type pdf)
-<use graphes pdf/variance go-ahead IGI corridor.pdf>
-Package pdftex.def Info: graphes pdf/variance go-ahead IGI corridor.pdf  used on input line 201.
-(pdftex.def)             Requested size: 483.69687pt x 253.84753pt.
-<graphes pdf/variance go-ahead IWI corridor.pdf, id=118, 688.55669pt x 361.35pt>
-File: graphes pdf/variance go-ahead IWI corridor.pdf Graphic file (type pdf)
-<use graphes pdf/variance go-ahead IWI corridor.pdf>
-Package pdftex.def Info: graphes pdf/variance go-ahead IWI corridor.pdf  used on input line 204.
-(pdftex.def)             Requested size: 483.69687pt x 253.84753pt.
-<graphes pdf/variance go-ahead IGI spirale.pdf, id=119, 759.6886pt x 384.1122pt>
+<graphes pdf/variance go-ahead IGI spirale.pdf, id=270, 759.6886pt x 384.1122pt>
 File: graphes pdf/variance go-ahead IGI spirale.pdf Graphic file (type pdf)
 <use graphes pdf/variance go-ahead IGI spirale.pdf>
-Package pdftex.def Info: graphes pdf/variance go-ahead IGI spirale.pdf  used on input line 210.
-(pdftex.def)             Requested size: 483.69687pt x 244.57083pt.
- [9 <d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IGI corridor.pdf> <d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IWI corridor.pdf
-
-pdfTeX warning: pdflatex.exe (file d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IWI corridor.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<graphes pdf/variance go-ahead IWI spirale.pdf, id=138, 759.6886pt x 384.1122pt>
+Package pdftex.def Info: graphes pdf/variance go-ahead IGI spirale.pdf  used on input line 215.
+(pdftex.def)             Requested size: 396.63496pt x 200.54831pt.
+<graphes pdf/variance go-ahead IWI spirale.pdf, id=271, 759.6886pt x 384.1122pt>
 File: graphes pdf/variance go-ahead IWI spirale.pdf Graphic file (type pdf)
 <use graphes pdf/variance go-ahead IWI spirale.pdf>
-Package pdftex.def Info: graphes pdf/variance go-ahead IWI spirale.pdf  used on input line 213.
-(pdftex.def)             Requested size: 483.69687pt x 244.57083pt.
- [10 <d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IGI spirale.pdf> <d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IWI spirale.pdf
+Package pdftex.def Info: graphes pdf/variance go-ahead IWI spirale.pdf  used on input line 221.
+(pdftex.def)             Requested size: 396.63496pt x 200.54831pt.
+ [9 <d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IGI spirale.pdf> <d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IWI spirale.pdf
 
 pdfTeX warning: pdflatex.exe (file d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IWI spirale.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [11] (d:/autres/Me/autre/Github/IA/rapport.aux) ) 
+>]
+<graphes pdf/variance go-ahead IGI corridor.pdf, id=295, 688.55669pt x 361.35pt>
+File: graphes pdf/variance go-ahead IGI corridor.pdf Graphic file (type pdf)
+<use graphes pdf/variance go-ahead IGI corridor.pdf>
+Package pdftex.def Info: graphes pdf/variance go-ahead IGI corridor.pdf  used on input line 231.
+(pdftex.def)             Requested size: 396.63496pt x 208.15509pt.
+<graphes pdf/variance go-ahead IWI corridor.pdf, id=296, 688.55669pt x 361.35pt>
+File: graphes pdf/variance go-ahead IWI corridor.pdf Graphic file (type pdf)
+<use graphes pdf/variance go-ahead IWI corridor.pdf>
+Package pdftex.def Info: graphes pdf/variance go-ahead IWI corridor.pdf  used on input line 237.
+(pdftex.def)             Requested size: 396.63496pt x 208.15509pt.
+ (d:/autres/Me/autre/Github/IA/rapport.lof [10 <d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IGI corridor.pdf> <d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IWI corridor.pdf
+
+pdfTeX warning: pdflatex.exe (file d:/autres/Me/autre/Github/IA/graphes pdf/variance go-ahead IWI corridor.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>])
+\tf@lof=\write5
+\openout5 = `rapport.lof'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
+ [11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 254.
+ (d:/autres/Me/autre/Github/IA/rapport.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 254.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 254.
+Package rerunfilecheck Info: File `rapport.out' has not changed.
+(rerunfilecheck)             Checksum: 47E3006A71EE8D5EDFFF88EF8432AFEE;1286.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
+ ) 
 Here is how much of TeX's memory you used:
- 9247 strings out of 480476
- 144314 string characters out of 5898102
- 435132 words of memory out of 5000000
- 25091 multiletter control sequences out of 15000+600000
+ 12931 strings out of 480476
+ 203163 string characters out of 5898102
+ 516786 words of memory out of 5000000
+ 28609 multiletter control sequences out of 15000+600000
  547278 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,7n,52p,339b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
-{d:/Programmes/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on d:/autres/Me/autre/Github/IA/rapport.pdf (11 pages, 351211 bytes).
+ 44i,7n,52p,415b,719s stack positions out of 5000i,500n,10000p,200000b,80000s
+{d:/Programmes/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><d:/Programmes/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on d:/autres/Me/autre/Github/IA/rapport.pdf (11 pages, 377484 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
- 0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 414 PDF objects out of 1000 (max. 8388607)
+ 339 compressed objects within 4 object streams
+ 86 named destinations out of 1000 (max. 500000)
+ 228 words of extra memory for PDF output out of 10000 (max. 10000000)
 
