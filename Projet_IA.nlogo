@@ -380,38 +380,29 @@ PENS
 @#$#@#$#@
 ## WHAT IS IT?
 Ce projet est destiné à représenter de la manière la plus fidèle possible le modèle EVAP du problème de la patrouille 
-
 ## HOW IT WORKS
-Les agents se déplace vers les patchs ayant le taux de chemicals le plus faible
-et n'étant pas des murs.
-Le taux de chemicals de chaque patch diminue au cours des ticks et n'est rafraichi que lorsqu'un agent passe dessus.
+Les agents se déplacent vers les patchs ayant le taux de chemicals le plus faible
+et n'étant pas des murs dans leur proximité directe.
+Chaque patch n'étant pas un mur est initialisé avec un niveau de chemical nul.
+Le taux de chemicals de chaque patch diminue au cours du temps (illustré par les ticks) et n'est réinitialisé à 1 que lorsqu'un agent passe dessus.
 ## HOW TO USE IT
-
 L'utilisateur peut ajuster le nombre et le positionnement des agents du modèle en utilisant les différents boutons et slider à disposition.
 Il peut aussi tracer directement les murs du modèle en utilisant la fonctionnalité 
-'Draw walls' ou utiliser des configuration déjà existantes en les important.
-## THINGS TO NOTICE
+'Draw walls' ou utiliser des configuration déjà existantes en les important via la commande 'import-world'.
 
-(suggested things for the user to notice while running the model)
+## THINGS TO NOTICE
+Le graphique tracé correspond aux paramètres IGI et IWI, qui témoignent du niveau d'efficacité de la patrouille. Chaque patch possède un attribut int incrémenté à chaque tick. 
+Cet entier n'est remis à 0 que par les agents et conditionne les valeurs d'IGI et d'IWI.
 
 ## THINGS TO TRY
-
 Essayer différents paramètres et configurations peut permettre de constater les différences d'efficacité des patrouilles des agents.
-## EXTENDING THE MODEL
-
-(suggested things to add or change in the Code tab to make the model more complicated, detailed, accurate, etc.)
-
-## NETLOGO FEATURES
-
-(interesting or unusual features of NetLogo that the model uses, particularly in the Code tab; or where workarounds were needed for missing features)
+Changer le nombre d'agents ou la probabilité d'aller droit devant en priorité pour chaque agent peut grandement impacter les résultats obtenus.
 
 ## RELATED MODELS
-
-(models in the NetLogo Models Library and elsewhere which are of related interest)
+Une autre alternative au modèle EVAP abordé ici est le modèle CLInG du problème de la patrouille
 
 ## CREDITS AND REFERENCES
-
-(a reference to the model's URL on the web if it has one, as well as any other necessary credits, citations, and links)
+Swarm Approaches for the Patrolling Problem, Information Propagation vs. Pheromone Evaporation, Hoang-Nam Chu, Arnaud Glad1, Olivier Simonin, François Sempé, Alexis Drogoul, François Charpillet
 @#$#@#$#@
 default
 true
