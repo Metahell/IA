@@ -31,8 +31,11 @@
 \setlength{\parindent}{0pt}
 
 \section*{Introduction}
-    \paragraph{}Ce projet a pour objectif de modéliser aussi précisément que possible le problème de patrouille 
-    en utilisant l'approche d'évaporation des phéromones.
+    \paragraph{}Une patrouille est une mission impliquant une équipe de plusieurs individus dont l'objectif consiste à visiter en permanence les zones concernées d'un environnement, afin de le superviser, le contrôler ou le protéger efficacement.
+    Un groupe de drones à la recherche de feux de forêt afin de contribuer à la conservation des écosystèmes, une équipe de robots aspirateurs à la recherche de saletés, des facteurs effectuant leur tournée quotidienne ou une escouade militaire sécurisant une zone sont autant d'exemples de patrouilles.
+    L'exécution d'une telle tâche implique que tous les membres impliqués coordonnent efficacement leurs actions.
+    
+    Dans ce rapport, nous étudions l'approche d'évaporation des phéromones.
     Cette approche, inspirée par l'étude des colonies d'insectes sociaux, a pour 
     particularité d'attribuer à chaque zone géographique un taux de phéromones spécifique qui diminue avec le temps.
     Les agents ont alors pour fonction de maximiser autant que possible le taux de phéromones 
@@ -67,8 +70,7 @@ résoudre ce problème.
     \subsection{Les cases}
 
         \paragraph{}Chaque case se voit attribuer plusieurs paramètres.
-
-        Le premier est un booléen \texttt{mur} indiquant si la case est un mur ou non et le deuxième est un nombre \texttt{phéromone} indiquant le niveau de phéromones
+Le premier est un booléen \texttt{mur} indiquant si la case est un mur ou non et le deuxième est un nombre \texttt{phéromone} indiquant le niveau de phéromones
         de la case. Le dernier paramètre est un entier \texttt{ini} qui recense l'INI de la case.
 
         Durant une simulation, le \texttt{phéromone} de chaque case diminue à chaque pas de temps comme expliqué plus-haut : $p$, le coefficient
@@ -78,7 +80,6 @@ résoudre ce problème.
         ayant le booléen \texttt{mur} à \texttt{true} sont bleues et les autres ont une couleur verte dont l'intensité varie proportionnellement à leur
         niveau de phéromones.
     \subsection{Les agents}
-
         \paragraph{}À chaque pas de temps, les agents se déplacent sur la case mitoyenne (uniquement sur la même ligne ou sur la même colonne) 
         ayant le paramètre \texttt{phéromone} le plus bas et l'incrémente de \textit{un}. Ce faisant, il remet aussi le paramètre \texttt{ini} 
         de la case à \textit{zéro}. Les agents ignorent les cases ayant leur paramètre \texttt{mur} à \texttt{true}. Tous les agents ont la 
@@ -125,8 +126,8 @@ résoudre ce problème.
         \begin{figure}[!h]
             \begin{center}
                 \includegraphics[width = \textwidth/5]{defaut_png.PNG}
-                \includegraphics[width = \textwidth/5]{spirale_png.PNG}
-                \includegraphics[width = \textwidth/5]{corridor_png.PNG}
+                \includegraphics[width = \textwidth/5,]{spirale_png.PNG}
+                \includegraphics[width = \textwidth/5, height = 3.7cm]{corridor_png.PNG}
                 \caption{Environnements de test \\ \textit{les obstacles sont en bleu, les cases normales en noir}}
             \end{center}
         \end{figure}
@@ -141,13 +142,13 @@ résoudre ce problème.
             extrêmes.
             \begin{figure}[!h]
                 \begin{center}
-                    \includegraphics[width = 0.82\textwidth]{graphes pdf/variance tortues IGI.pdf}
+                    \includegraphics[height = 8.1 cm]{graphes pdf/variance tortues IGI.pdf}
                     \caption{IGI en fonction du nombre d'agents pour l'environnement vide}
                 \end{center}
             \end{figure}
             \begin{figure}[!h]
                 \begin{center}
-                    \includegraphics[width = 0.82\textwidth]{graphes pdf/variance tortues IWI.pdf}
+                    \includegraphics[height = 8.1cm]{graphes pdf/variance tortues IWI.pdf}
                     \caption{IWI en fonction du nombre d'agents pour l'environnement vide}
                 \end{center}
             \end{figure}
@@ -238,8 +239,19 @@ résoudre ce problème.
             \caption{IWI en fonction de $p_{avant}$ pour l'environnement en corridor}
         \end{center}
     \end{figure}
+    \newpage
 \section{Conclusion}
+\paragraph{} Dans cet article, nous avons traité du problème de la patrouille dans un environnements inconnu.
+Nous avons étudié l'impact des deux paramètres de notre modèle sur l'efficacité de la patrouille. Nous avons pu remarquer que 
+l'intérêt de l'ajout d'agents supplémentaires varie en fonction de l'environnement. De même, la valeur de $p_{avant}$ a une influence sur la 
+qualité de la patrouille dépendant de la configuration du terrain.
 
+Il est possible de compléxifier ce modèle. On pourrait ainsi introduire la possibilité de paramétrer le champ de vision des agents, afin de pouvoir l'étendre à plus que les cases directement voisines de celles où ces derniers se trouvent.
+Le phénomène d'évaporation des phéromones pourrait aussi être couplé à un phénomène de diffusion sur les cases environnantes, de sorte qu'à chaque pas de temps, une partie des phéromones évaporés aille s'ajouter à la quantité de phéromones des cases voisines.
+Piste d'amélioration
+    -> augmentation de la vision des agents
+    -> diffusion des phéromones aux cases voisines
+    -> ?
 \appendix
 \section{Annexe}
 \listoffigures
