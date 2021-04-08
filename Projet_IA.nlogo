@@ -379,7 +379,7 @@ PENS
 
 @#$#@#$#@
 ## WHAT IS IT?
-Ce projet est destiné à représenter de la manière la plus fidèle possible le modèle EVAP du problème de la patrouille 
+Ce projet implémente le modèle EVAP du problème de la patrouille 
 ## HOW IT WORKS
 Les agents se déplacent vers les patchs ayant le taux de chemicals le plus faible
 et n'étant pas des murs dans leur proximité directe.
