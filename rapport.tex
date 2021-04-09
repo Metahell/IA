@@ -74,10 +74,10 @@ Le premier est un booléen \texttt{mur} indiquant si la case est un mur ou non e
         de la case. Le dernier paramètre est un entier \texttt{ini} qui recense l'INI de la case.
 
         Durant une simulation, le \texttt{phéromone} de chaque case diminue à chaque pas de temps comme expliqué plus-haut : $p$, le coefficient
-        d'évaporation, est un paramètre réglable de la simulation mais n'a qu'une influence esthétique. les cases ayant leur paramètre \texttt{mur}
+        d'évaporation, est un paramètre réglable de la simulation mais n'a qu'une influence esthétique. Les cases ayant leur paramètre \texttt{mur}
         à \texttt{true} ne font pas diminuer la valeur de leur \texttt{phéromone} et ne font pas augmenter leur \texttt{ini}, qui ne sont de toute façon jamais pris en compte dans la simulation.
         la couleur des cases varie en fonction de leur état de mur ou non et de leur niveau de phéromones : les cases
-        ayant le booléen \texttt{mur} à \texttt{true} sont bleues et les autres ont une couleur verte dont l'intensité varie proportionnellement à leur
+        ayant le booléen \texttt{mur} à \texttt{true} sont bleues et les autres ont une couleur verte dont l'intensité varie de façon inversement proportionnelle à leur
         niveau de phéromones.
     \subsection{Les agents}
         \paragraph{}À chaque pas de temps, les agents se déplacent sur la case mitoyenne (uniquement sur la même ligne ou sur la même colonne) 
@@ -156,7 +156,7 @@ Le premier est un booléen \texttt{mur} indiquant si la case est un mur ou non e
         \subsubsection{Environnement en spirale}
         \paragraph{} Contrairement à l'environnement vide, le nombre d'agents dans l'environnement en spirale n'est pas parfaitement inversement proportionnelle aux taux d'IGI et d'IWI.
         Par exemple, on peut noter sur le graphique que passer de un à deux agents fait baisser l'IGI moyenne d'environ 62 \%, Contrairement aux 50 \% auquel on pourrait s'attendre.
-        On remarque également que l'écart entre les maximums et les moyennes des valeurs est beaucoup plus élevé que dans l'environnement vide. Ainsi, le maximum d'IWI dans l'environnement vide à un agent valait 1,5 fois la valeurs de la moyenne, tandis qu'avec un agent dans l'environnement en spirale, le maximum d'IWI est 4,4 fois supérieur à sa moyenne.
+        On remarque également que l'écart entre les maximums et les moyennes des valeurs est beaucoup plus élevé que dans l'environnement vide. Ainsi, le maximum d'IWI dans l'environnement vide à un agent valait 1,5 fois la valeur de la moyenne, tandis qu'avec un agent dans l'environnement en spirale, le maximum d'IWI est 4,4 fois supérieur à sa moyenne.
         Enfin, on peut noter que les valeurs maximum de l'IGI et de l'IWI pour trois et quatre agents sont plus élevées que celles pour deux agents, ce qui montre que l'aléatoire a un plus grand impact sur cet environnement que sur le précédent.
             \begin{figure}[!h]
                 \begin{center}
@@ -174,7 +174,7 @@ Le premier est un booléen \texttt{mur} indiquant si la case est un mur ou non e
         \subsubsection{Environnement en corridor}
             \paragraph{} Contrairement à l'environnement en spirale, où passer de un à deux agents était plus avantageux que ce à quoi on aurait pu s'attendre, passer de un à deux agents sur l'environnement en corridor ne donne qu'une baisse de 40 \% pour l'IGI moyenne et de 20 \% pour l'IWI moyenne.
             De même, passer de deux à quatre agent ne fait baisser l'IWI que de 44 \% mais divise bien l'IGI moyen par deux. La disposition en corridor a donc pour effet de diminuer l'avantage apporté par des agents supplémentaires lorsque le nombre d'agents est faible.
-            On remarque aussi que les valeurs maximum des deux paramètres peuvent croître en même temps que le nombre d'agents. Cette configuration en corridor a ainsi un risque important de comporter des cases qui ne sont pas visitées pendant un grand nombre de pas proportionnellement au nombre d'agents, quelque soit ce dernier.
+            On remarque aussi que les valeurs maximums des deux paramètres peuvent croître en même temps que le nombre d'agents. Cette configuration en corridor a ainsi un risque important de comporter des cases qui ne sont pas visitées pendant un grand nombre de pas proportionnellement au nombre d'agents, quelque soit ce dernier.
 
             \begin{figure}[!h]
                 \begin{center}
@@ -190,8 +190,8 @@ Le premier est un booléen \texttt{mur} indiquant si la case est un mur ou non e
             \end{figure}
             \newpage
     \subsection{Valeur de \texorpdfstring{$p_{avant}$}{p\_avant}}
-    \paragraph{}Pour rappel, $p_{avant}$ détermine la probabilité qu'un agent donne la priorité à une case directement en face de lui si elle a le niveau le plus faible de chemical dans la proximité directe de l'agent.
-    Dans le cas contraire, la case choisie va avoir un niveau de chemical minimal mais pas nécessairement celle faisant face à l'agent. 
+    \paragraph{}Pour rappel, $p_{avant}$ détermine la probabilité qu'un agent donne la priorité à une case directement en face de lui si elle a le niveau le plus faible de phéromones dans la proximité directe de l'agent.
+    Dans le cas contraire, la case choisie va avoir un niveau de phéromones minimal mais pas nécessairement celle faisant face à l'agent. 
     \subsubsection{Environnement vide}
     \paragraph{}On observe que les tendances moyennes d'IGI et d'IWI reste stable avec la variation de $p_{avant}$. Cet environnement étant dénué de mur, toutes les cases doivent être visitées pour limiter les valeurs maximales d'IWI et d'IGI.
     On n'observe donc aucune tendance particulière avec la variation de $p_{avant}$.
@@ -209,8 +209,8 @@ Le premier est un booléen \texttt{mur} indiquant si la case est un mur ou non e
     \end{figure}
     \newpage
     \subsubsection{Environnement en spirale}
-    \paragraph{}On observe que les tendances moyennes d'IGI et d'IWI reste stable avec la variation de $p_{avant}$. Cependant, les valeurs maximales tendent à diminuer à mesure que la probabilité d'aller tout droit se rapproche de 1.
-    Ceci peut s'expliquer par la forme spirale, qui demande d'être parcourue entièrement et donc d'atteindre le centre en effectuant le moins de détours possible pour avoir des valeurs d'IGI et d'IWI les plus basses.
+    \paragraph{}On observe que les tendances moyennes d'IGI et d'IWI restent stables avec la variation de $p_{avant}$. Cependant, les valeurs maximales tendent à diminuer à mesure que la probabilité d'aller tout droit se rapproche de 1.
+    Ceci peut s'expliquer par la forme spirale, qui demande d'être parcourue entièrement et donc d'atteindre le centre en effectuant le moins de détours possibles pour avoir les valeurs d'IGI et d'IWI les plus basses.
     \begin{figure}[!h]
         \begin{center}
             \includegraphics[width = 0.82\textwidth]{graphes pdf/variance go-ahead IGI spirale.pdf}
@@ -225,8 +225,8 @@ Le premier est un booléen \texttt{mur} indiquant si la case est un mur ou non e
     \end{figure}
     \newpage
     \subsubsection{Environnement en corridor}
-    \paragraph{}On observe que les tendances moyennes d'IGI et d'IWI reste stable avec la variation de $p_{avant}$. La forme spéciale de cet environnement tend à faire baisser les valeurs maximales d'IGI et d'IWI lorsque $p_{avant}$ tend  vers 1.
-    Si la probabilité d'aller tout droit augmente, de nouvelles zones qui n'ont pas été visitée vont être atteintes plus vite par les agents, ce qui contribue à baisser IGI et IWI.
+    \paragraph{}On observe que les tendances moyennes d'IGI et d'IWI restent stables avec la variation de $p_{avant}$. La forme spéciale de cet environnement tend à faire baisser les valeurs maximales d'IGI et d'IWI lorsque $p_{avant}$ tend  vers 1.
+    Si la probabilité d'aller tout droit augmente, de nouvelles zones qui n'ont pas été visitées vont être atteintes plus vite par les agents, ce qui contribue à baisser IGI et IWI.
     \begin{figure}[!h]
         \begin{center}
             \includegraphics[width = 0.82\textwidth]{graphes pdf/variance go-ahead IGI corridor.pdf}
@@ -241,19 +241,16 @@ Le premier est un booléen \texttt{mur} indiquant si la case est un mur ou non e
     \end{figure}
     \newpage
 \section{Conclusion}
-\paragraph{} Dans cet article, nous avons traité du problème de la patrouille dans un environnements inconnu.
+\paragraph{} Dans cet article, nous avons traité du problème de la patrouille dans un environnement inconnu.
 Nous avons étudié l'impact des deux paramètres de notre modèle sur l'efficacité de la patrouille. Nous avons pu remarquer que 
 l'intérêt de l'ajout d'agents supplémentaires varie en fonction de l'environnement. De même, la valeur de $p_{avant}$ a une influence sur la 
 qualité de la patrouille dépendant de la configuration du terrain.
 
 Il est possible de compléxifier ce modèle. On pourrait ainsi introduire la possibilité de paramétrer le champ de vision des agents, afin de pouvoir l'étendre à plus que les cases directement voisines de celles où ces derniers se trouvent.
 Le phénomène d'évaporation des phéromones pourrait aussi être couplé à un phénomène de diffusion sur les cases environnantes, de sorte qu'à chaque pas de temps, une partie des phéromones évaporés aille s'ajouter à la quantité de phéromones des cases voisines.
-Piste d'amélioration
-    -> augmentation de la vision des agents
-    -> diffusion des phéromones aux cases voisines
-    -> ?
+
 \appendix
-\section{Annexe}
+\section*{Annexe}
 \listoffigures
 \section*{Bibliographie}
 \begin{thebibliography}{1}
