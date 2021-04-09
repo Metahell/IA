@@ -389,6 +389,8 @@ Le taux de chemicals de chaque patch diminue au cours du temps (illustré par le
 L'utilisateur peut ajuster le nombre et le positionnement des agents du modèle en utilisant les différents boutons et slider à disposition.
 Il peut aussi tracer directement les murs du modèle en utilisant la fonctionnalité 
 'Draw walls' ou utiliser des configuration déjà existantes en les important via la commande 'import-world'.
+'import-world "spirale"' pour l'environnement en spirale.
+'import-world "corridor"' pour l'environnement en corridor.
 
 ## THINGS TO NOTICE
 Le graphique tracé correspond aux paramètres IGI et IWI, qui témoignent du niveau d'efficacité de la patrouille. Chaque patch possède un attribut int incrémenté à chaque tick. 

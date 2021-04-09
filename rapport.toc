@@ -32,4 +32,3 @@
 \contentsline {paragraph}{}{10}{section*.27}%
 \contentsline {section}{\numberline {5}Conclusion}{11}{section.5}%
 \contentsline {paragraph}{}{11}{section*.30}%
-\contentsline {section}{\numberline {A}Annexe}{11}{appendix.A}%
